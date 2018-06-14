@@ -1,0 +1,99 @@
+.color-usage #colors .item {
+    display: inline-block; vertical-align: middle;
+    width: 120px; height: 30px;
+    padding: 0 8px;
+    font: 16px/30px monospace;
+    color: #000;
+    text-shadow: 0 0 2px #fff;
+    cursor: pointer;
+}
+.color-usage #colors .item:hover {
+    position: relative;
+    outline: 1px dashed #8796ff;
+}
+.color-usage #colors .item:focus {
+    position: relative;
+    outline: 2px dashed #f00;
+}
+.color-usage .form {
+    position: relative;
+    min-width: 320px; max-width: 800px;
+    margin-bottom: 10px;
+    padding-right: 200px;
+}
+.color-usage .form a { color: #f00; }
+.color-usage .form textarea {
+    display: block;
+    width: 800px; height: 200px;
+    margin: 10px 0;
+}
+.color-usage .form #action {
+    position: absolute; bottom: 0; left: 100%;
+    margin-left: -195px;
+    padding: 4px 15px;
+    text-indent: -1px;
+    font-weight: bold;
+    color: #ff7000;
+    white-space: nowrap;
+}
+.color-usage .form #sorting {
+    display: none;
+    position: absolute; top: 0; left: 100%;
+    margin-left: -195px;
+}
+.color-usage .form #sorting button {
+    float: left;
+    clear: both;
+    margin-bottom: 3px;
+    white-space: nowrap;
+}
+.color-usage #sorting .active { border-color: #0f0; }
+
+
+body.popup-opened { overflow: hidden; }
+#popup-details {
+    display: none;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,.2);
+}
+#popup-details.opened { display: block; }
+.color-popup {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 10px 10px 10px 60px;
+    background: #fff;
+    font: 12px/1.4 Lucida Console, Courier New, monospace, serif;
+    border: 1px solid #888;
+}
+.color-popup .close {
+    position: absolute; right: 0; top: 0;
+    width: 32px; height: 32px;
+    overflow: hidden;
+    background: none;
+    border: 0;
+    transition: background .2s;
+}
+.color-popup .close:hover { background: #ddd; }
+.color-popup .close::before {
+    content: 'x';
+    position: absolute; left: 9px; top: 0;
+    font: bold 25px/25px monospace;
+}
+.color-popup .color { padding-bottom: 5px; font: bold 17px monospace; }
+.color-popup .color i {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 50px;
+    margin-right: 6px;
+    box-shadow: 0 0 2px #000;
+}
+.color-popup .line + .line { margin-top: 10px; }
+.color-popup .list {
+    max-height: 30vh;
+    overflow: auto;
+    padding-left: 20px;
+    color: #999;
+    cursor: default;
+}
+.color-popup .list div:hover { color: #000; }
+

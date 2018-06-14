@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS Selectors Analyzer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="description" content="Get CSS selectors list. Count of all selectors, the longest one, most popular selectors.">
+<meta name="keywords" content="css, selector, analyze">
+<link href="../css/styles.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="css-selectors">
+
+<div class="logo"><a href="/">CSS-Tools</a> =&gt; CSS Selectors Analyzer</div>
+
+<div class="wrap">
+	<div class="form-row">
+		<textarea cols="100" rows="10" id="css">
+.css-selectors #action,
+.css-selectors #action2 { min-width: 100px; }
+.css-selectors .selectors.popular textarea { width: 250px; }
+@media (max-width: 500px){
+	.css-selectors .selectors { display: block; }
+	.css-selectors2 .selectors2,
+	.css-selectors2 p { display: block; }
+}
+		</textarea>
+		<input type="button" value="Go" id="action">
+	</div>
+
+	<div class="results no-results">
+		<div class="result-info"></div>
+		<div class="result-data">
+			<div class="selectors-list">
+				<strong>Selectors List</strong>
+				<textarea cols="100" rows="10" id="sel-all"></textarea>
+			</div>
+			<div class="selectors-popular">
+				<strong>Most populat selectors</strong>
+				<textarea cols="100" rows="10" id="sel-popular"></textarea>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="../js/core.js"></script>
+<script src="script.js"></script>
+
+<script src="../js/metrics.js"></script>
+
+</body>
+</html>
+
+

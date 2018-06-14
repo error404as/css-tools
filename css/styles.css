@@ -1,0 +1,70 @@
+html, body, h1, h2, h3, h4, h5, h6, p, em, strong, abbr, acronym, blockquote, q, cite, ins, del, dfn, a, div, span, pre, hr, address, br, b, i, sub, sup, big, small, tt, table, tr, caption, thead, tbody, tfoot, col, colgroup, form, input, label, textarea, button, fieldset, legend, select, option, ul, ol, dl, dt, dd, code, var, samp, img, object, param, map, area, iframe { padding: 0; margin: 0; }
+body {
+	padding: 20px;
+	font: 14px/1.4em Arial, Helvetica, sans-serif;
+	color: #000;
+	background: #fff;
+}
+a { color: #000; text-decoration: underline; cursor: pointer; }
+a:hover { text-decoration: none; }
+.clear { clear:both; }
+h1 { font-size: 26px; }
+h2 { font-size: 15px; }
+h3 { font-size: 13px; }
+h4 { font-size: 12px; }
+h1, h2, h3, h4 { line-height: 1.2; }
+h3 { margin: 0 0 5px; padding: 0; font: bold 15px/1.1 Arial, sans-serif; }
+li { margin-left: 25px; }
+p { margin: 10px 0; }
+img { border: 0; }
+textarea { min-width: 300px; max-width: 97%; }
+input { vertical-align:middle; max-width: 95%; }
+input[type=button],
+input[type=submit],
+input[type=reset],
+button { cursor: pointer; overflow: visible; padding: 2px 6px; }
+
+/*--------------Page-----------------*/
+
+.logo.home {
+	padding: 70px 0;
+	font: bold 39px/0.9 "Courier New", Courier, monospace;
+	color: #039bdd;
+	text-align: center;
+}
+.logo {
+	padding: 20px 0;
+	font: bold 27px/0.9 "Courier New", Courier, monospace;
+	color: #696969;
+	text-align: left;
+}
+.logo a { color: #039bdd; }
+
+
+.main-nav { width:766px; margin: auto; }
+.main-nav li {
+	display: inline-block; vertical-align: top;
+	width: 340px;
+	margin: 0 20px 20px;
+	list-style: none;
+}
+.main-nav li a {
+	display: block;
+	font: 20px/1.1 Georgia, "Times New Roman", Times, serif;
+}
+
+@media (max-width: 770px){
+	.logo.home { padding: 20px 0; }
+	.main-nav { width: auto; max-width: 340px; padding-top: 30px; }
+	.main-nav li { display: block; width: auto; }
+}
+@media (max-width: 400px){
+	body { padding: 5px; }
+	.main-nav { max-width: none; }
+	.main-nav li { margin: 0 0 20px; }
+}
+
+.form-row { margin-bottom: 10px; }
+.form-text,
+.form-row input[type=text] { padding: 2px 4px; }
+

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Colors SCSS Analyzer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="description" content="Visualize colors from SCSS variables list">
+<meta name="keywords" content="css, color, scss, variable">
+<link href="../css/styles.css" rel="stylesheet" />
+<link href="styles.css" rel="stylesheet" />
+</head>
+<body class="color-scss">
+	
+<div class="logo"><a href="/">CSS-Tools</a> =&gt; Colors SCSS Analyzer</div>
+
+
+<div class="field">
+	<textarea cols="20" rows="5" id="colors">$aqua:         #009c9c;
+$yellow:       #ffe600;
+$grey:         #000000; // scss comments
+$coral:        #f3666b;
+$coral-light:  $coral + 135;
+$grey-light:   $grey + 130;
+$aqua-hover:   $aqua - 30;
+$grey-hover:   $grey-light - 20;
+$white-hover:  $grey-light;
+$clr-hover:    $yellow;</textarea>
+	<input type="button" value="Show Colors" id="btn_show">
+</div>
+
+<div class="field">
+	<h3>Set back color:</h3>
+	<input type="text" class="text-input" value="" id="compare" placeholder="Please enter HEX color">
+	<input type="button" value="Apply" id="compare_do">
+	<input type="button" value="Cancel" id="compare_cancel">
+</div>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+<script src="../js/metrics.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+.css-selectors textarea {
+    display: block;
+    width: 100%; max-width: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.css-selectors #action { min-width: 100px; }
+
+.css-selectors .no-results { display: none; }
+.css-selectors .result-info {
+    margin: 10px 0;
+    padding: 6px;
+    border: 1px solid #f00;
+}
+.css-selectors .result-data {
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+}
+.css-selectors .result-data > div {
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 680px){
+    .css-selectors .result-data { display: block; }
+    .css-selectors .result-data > div { width: auto; }
+
+    
+}

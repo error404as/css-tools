@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Colors converter: HEX-RGB-CMYK-HSV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="description" content="Converting colors: HEX-RGB-CMYK-HSV">
+<meta name="keywords" content="css, color, hex, rgb, convert">
+<link href="../css/styles.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="color-conv">
+
+<div class="logo"><a href="/">CSS-Tools</a> =&gt; Colors converter</div>
+<div class="option">
+	<label><input type="checkbox" name="tofix" id="tofix" checked> short numbers (CMYK, HSV)</label>
+	<small>e.g. 0.467 instead of 0.46666666666667</small>
+</div>
+
+<div class="form-row">
+	<div class="b-hex2rgb-line">
+		<div class="from">
+			<input type="text" class="hex" placeholder="#ff9900 or ff9900" value="ff9900" id="b-hex2rgb">
+			<button class="color jscolor {valueElement:'b-hex2rgb'}"></button>
+		</div>
+		<input type="hidden" id="b-hex2rgb-h">
+		<div class="button">
+			<button class="action"><span style="float: left;">HEX</span> ==&gt; <span style="float: right;">RGB</span></button>
+		</div>
+		<div class="to">
+			<input type="text" class="rgb_line">
+		</div>
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="b-hex2cmyk-line">
+		<div class="from">
+			<input type="text" class="hex" placeholder="#ff9900 or ff9900" value="ff9900" id="b-hex2cmyk">
+			<button class="color jscolor {valueElement:'b-hex2cmyk'}"></button>
+		</div>
+		<div class="button">
+			<button class="action"><span style="float: left;">HEX</span> ==&gt; <span style="float: right;">CMYK</span></button>
+		</div>
+		<div class="to">
+			<input type="text" class="cmyk_line">
+		</div>
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="b-rgb2hex-line">
+		<div class="from">
+			<input type="text" class="rgb_line" placeholder="115,66,61" value="115,66,61" id="b-rgb2hex">
+			<button class="color jscolor {valueElement:'b-rgb2hex-h'}"></button>
+		</div>
+		<input type="hidden" id="b-rgb2hex-h">
+		<div class="button">
+			<button class="action"><span style="float: left;">RGB</span> ==&gt; <span style="float: right;">HEX</span></button>
+		</div>
+		<div class="to">
+			<input type="text" class="hex" value="">
+		</div>
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="b-rgb2cmyk-line">
+		<div class="from">
+			<input type="text" class="rgb_line" placeholder="56,168,155" value="56,168,155" id="b-rgb2cmyk">
+			<button class="color jscolor {valueElement:'b-rgb2cmyk-h'}"></button>
+		</div>
+		<input type="hidden" id="b-rgb2cmyk-h">
+		<div class="button">
+			<button class="action"><span style="float: left;">RGB</span> ==&gt; <span style="float: right;">CMYK</span></button>
+		</div>
+		<div class="to">
+			<input type="text" class="cmyk_line">
+		</div>
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="b-rgb2hsv-line">
+		<div class="from">
+			<input type="text" class="rgb_line" placeholder="56,0,155" value="56,0,155" id="b-rgb2hsv">
+			<button class="color jscolor {valueElement:'b-rgb2hsv-h'}"></button>
+		</div>
+		<input type="hidden" id="b-rgb2hsv-h">
+		<div class="button">
+			<button class="action"><span style="float: left;">RGB</span> ==&gt; <span style="float: right;">HSV</span></button>
+		</div>
+		<div class="to">
+			<input type="text" class="hsv_line">
+		</div>
+	</div>
+</div>
+
+<p>RGB - Red, Green, Blue</p>
+<p>HEX - Hexadecimal (base-16)</p>
+<p>HSV - Hue, Saturation, Value</p>
+<p>CMYK - Cyan, Magenta, Yellow, Black</p>
+<p>More theory: <a href="https://css-tricks.com/nerds-guide-color-web/">A guide to Color on the Web | CSS-Tricks</a></p>
+
+<br>
+<p>Compare HEXs:</p>
+<div class="clr-comparing">
+	<div class="clr">
+		<input type="text" placeholder="#color-1">
+		<div class="hex"></div>
+		<div class="rgb"></div>
+	</div>
+	<div class="clr">
+		<input type="text" placeholder="#color-2">
+		<div class="hex"></div>
+		<div class="rgb"></div>
+	</div>
+</div>
+
+<script src="../js/colors.js"></script>
+<script src="script.js"></script>
+<script src="../js/jscolor.js"></script>
+
+<script src="../js/metrics.js"></script>
+
+</body>
+</html>

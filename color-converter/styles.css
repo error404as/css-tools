@@ -1,0 +1,28 @@
+body.color-conv {text-align: center;}
+.color-conv input {text-align: center;}
+.color-conv .option {margin-bottom: 20px;}
+.color-conv .option input {width: auto;}
+.color-conv .option label {display: block;}
+.color-conv .logo {text-align: center;}
+.color-conv .color {display: inline-block; vertical-align: middle; width: 20px; height: 20px; background: #f00; border: 1px solid #555;}
+.color-conv .from,
+.color-conv .button,
+.color-conv .to {display: inline-block; vertical-align: middle; margin: 0 5px; width: 230px;}
+.color-conv .from {text-align: right;}
+.color-conv .to {text-align: left;}
+.color-conv .button {width: auto;}
+.color-conv .button button {width: 120px; cursor: pointer;}
+
+.color-conv .from input[type=text] {width: 107px;}
+.color-conv .to input[type=text] {width: 170px;}
+.clr-comparing {display: flex; width: 400px; margin: auto;}
+.clr-comparing .clr {padding-bottom: 50px; flex-grow: 1; text-shadow: 0 0 10px #fff;}
+.clr-comparing .clr input {width: 100%; height: 20px;}
+.clr-comparing .clr input.error {border-color: #f00;}
+@media (max-width: 670px){
+	.color-conv .from,
+	.color-conv .button,
+	.color-conv .to {display: block; width: auto; text-align: center; margin: 5px;}
+	.color-conv .to {margin-bottom: 30px;}
+	.color-conv .colpick {left: 50% !important; margin-left: -141px !important;}
+}
